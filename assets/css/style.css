@@ -1,0 +1,12 @@
+/* body {
+    background-color: red;
+} */
+
+.jumbotron {
+    text-align: center;
+    border-bottom: solid 8px black;
+}
+
+.main {
+    background-color: aqua;
+}
