@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log(moment());
+
 
     //text variables
     var timeEl = $('<p>');
@@ -40,7 +40,7 @@ $(document).ready(function() {
     function checkTime() {
 
         // PM Time Check
-        console.log(box12.attr('data-hour'));
+
 
         // ------- 12
         if (parseInt(box12.attr('data-hour')) > timeNow) {
@@ -282,15 +282,6 @@ $(document).ready(function() {
 
 
 
-    // var myStr = JSON.stringify(myObj);
-    // localStorage.setItem('myObj', myStr);
-    // console.log(localStorage);
-    // var myObj = {
-    //     name: 'Jacob',
-    //     age: 24
-    // }
-    // console.log(myStr);
-    // console.log(JSON.parse(myStr));
-    console.log(timeNow);
+
     checkTime();
 });

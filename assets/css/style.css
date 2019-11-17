@@ -1,40 +1,3 @@
-/* body {
-    background-color: red;
-}
-
-.jumbotron {
-    text-align: center;
-    border-bottom: solid 8px black;
-}
-
-.main {
-    background-color: lightgray;
-    height: 100%;
-}
-
-#timebtn {
-    border-radius: 10px;
-}
-
-.time-cell {
-    background-color: aqua;
-    padding: 20px;
-    /* margin-right: 5px; */
-
-
-/* max-width: 70px;
-}
-
-
- input {
-    margin-right: 30px
-} 
-
-button {
-    height: 80px;
-    margin-left: 20px
-}  */
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -69,7 +32,6 @@ textarea {
 
 .row {
     white-space: pre-wrap;
-    /* height: 80px; */
     border-top: 1px solid white;
     ;
 }
