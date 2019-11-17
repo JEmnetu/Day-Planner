@@ -196,15 +196,87 @@ $(document).ready(function() {
 
 
 
-
+    // update the time every 1 second
     setInterval(tick, 1000);
+    // Check the time every 10 minutes and adjust timeblock color as needed
+    setInterval(checkTime, 600000);
+
+
+    //onClick events for all save buttons
+
+    button9.on('click', function() {
+
+        localStorage.setItem('Entry9', box9.val());
+        var entry = localStorage.getItem('Entry9');
+        box9.val(entry);
+    });
+    button10.on('click', function() {
+
+        localStorage.setItem('Entry10', box10.val());
+        var entry = localStorage.getItem('Entry10');
+        box10.val(entry);
+    });
+    button11.on('click', function() {
+
+        localStorage.setItem('Entry11', box11.val());
+        var entry = localStorage.getItem('Entry11');
+        box11.val(entry);
+    });
+    button11.on('click', function() {
+
+        localStorage.setItem('Entry11', box11.val());
+        var entry = localStorage.getItem('Entry11');
+        box11.val(entry);
+    });
+    button12.on('click', function() {
+
+        localStorage.setItem('Entry12', box12.val());
+        var entry = localStorage.getItem('Entry12');
+        box12.val(entry);
+    });
+
+
+
+
+
+
+
+
+
 
     button1.on('click', function() {
-        console.log(box1.val());
-        localStorage.setItem('1:00 Entry', box1.val());
-        var entry = localStorage.getItem('1:00 Entry');
+
+        localStorage.setItem('Entry1', box1.val());
+        var entry = localStorage.getItem('Entry1');
         box1.val(entry);
-    })
+    });
+
+    button2.on('click', function() {
+
+        localStorage.setItem('Entry2', box2.val());
+        var entry = localStorage.getItem('Entry2');
+        box2.val(entry);
+    });
+
+    button3.on('click', function() {
+
+        localStorage.setItem('Entry3', box3.val());
+        var entry = localStorage.getItem('Entry3');
+        box3.val(entry);
+    });
+
+    button4.on('click', function() {
+
+        localStorage.setItem('Entry4', box4.val());
+        var entry = localStorage.getItem('Entry4');
+        box4.val(entry);
+    });
+    button5.on('click', function() {
+
+        localStorage.setItem('Entry5', box45val());
+        var entry = localStorage.getItem('Entry5');
+        box5.val(entry);
+    });
 
 
 
