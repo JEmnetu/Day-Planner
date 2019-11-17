@@ -1,6 +1,9 @@
 $(document).ready(function() {
     console.log(moment());
+
+    //text variables
     var timeEl = $('<p>');
+    var dayEl = $('<p>');
     var box1 = $('#div1');
     var box2 = $('#div2');
     var box3 = $('#div3');
@@ -10,19 +13,20 @@ $(document).ready(function() {
     var box11 = $('#div11');
     var box10 = $('#div10');
     var box9 = $('#div9');
-    var dayEl = $('<p>');
+
+    // buttons
+    var button9 = $('#btn9');
+    var button10 = $('#btn10');
+    var button11 = $('#btn11');
+    var button12 = $('#btn12');
+    var button1 = $('#btn1');
+    var button2 = $('#btn2');
+    var button3 = $('#btn3');
+    var button4 = $('#btn4');
+    var button5 = $('#btn5');
+
+
     var timeNow = moment().format('HH');
-
-
-    tick();
-
-    // function checkTime() {
-    //     if (($('#box1').attr('data-hour')) > 5) {
-    //         console.log('Its before 5!');
-    //     }
-    // }
-
-
 
     function tick() {
 
@@ -32,8 +36,6 @@ $(document).ready(function() {
         $('.jumbotron').append(timeEl);
 
     }
-
-    setInterval(tick, 1000);
 
     function checkTime() {
 
@@ -186,6 +188,24 @@ $(document).ready(function() {
 
 
     }
+
+
+    tick();
+
+
+
+
+
+
+    setInterval(tick, 1000);
+
+    button1.on('click', function() {
+        console.log(box1.val());
+        localStorage.setItem('1:00 Entry', box1.val());
+        var entry = localStorage.getItem('1:00 Entry');
+        box1.val(entry);
+    })
+
 
 
 
