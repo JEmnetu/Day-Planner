@@ -40,7 +40,10 @@ $(document).ready(function() {
     var clearBtn = $('#clearBtn');
 
 
-    var timeNow = moment().format('HH');
+    var timeNow = parseInt(moment().format('HH'));
+
+
+
 
     function clear() {
         localStorage.clear();
@@ -90,7 +93,7 @@ $(document).ready(function() {
         }
 
         //-------- 1
-        if (parseInt(box1.attr('data-hour') + 12) > timeNow) {
+        if (parseInt(box1.attr('data-hour')) > timeNow) {
             box1.removeClass('past present future');
             box1.addClass('future')
 
@@ -107,11 +110,11 @@ $(document).ready(function() {
         }
 
         //-------- 2
-        if (parseInt(box2.attr('data-hour') + 12) > timeNow) {
+        if (parseInt(box2.attr('data-hour')) > timeNow) {
             box2.removeClass('past present future');
             box2.addClass('future');
 
-        } else if (parseInt(box12.attr('data-hour')) === timeNow) {
+        } else if (parseInt(box2.attr('data-hour')) === timeNow) {
             box2.removeClass('past present future');
             box2.addClass('present');
 
@@ -124,11 +127,11 @@ $(document).ready(function() {
         }
 
         //-------- 3
-        if (parseInt(box3.attr('data-hour') + 12) > timeNow) {
+        if (parseInt(box3.attr('data-hour')) > timeNow) {
             box3.removeClass('past present future');
             box3.addClass('future');
 
-        } else if (parseInt(box12.attr('data-hour')) === timeNow) {
+        } else if (parseInt(box3.attr('data-hour')) === timeNow) {
             box3.removeClass('past present future');
             box3.addClass('present');
 
@@ -140,7 +143,7 @@ $(document).ready(function() {
         }
 
         //-------- 4
-        if (parseInt(box4.attr('data-hour') + 12) > timeNow) {
+        if (parseInt(box4.attr('data-hour')) > timeNow) {
             box4.removeClass('past present future');
             box4.addClass('future');
 
@@ -156,7 +159,7 @@ $(document).ready(function() {
         }
 
         //-------- 5
-        if (parseInt(box5.attr('data-hour') + 12) > timeNow) {
+        if (parseInt(box5.attr('data-hour')) > timeNow) {
             box5.removeClass('past present future');
             box5.addClass('future');
         } else if (parseInt(box5.attr('data-hour')) === timeNow) {
