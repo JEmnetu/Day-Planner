@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
 
+
+
     //text variables
     var timeEl = $('<p>');
     var dayEl = $('<p>');
@@ -13,6 +15,17 @@ $(document).ready(function() {
     var box11 = $('#div11');
     var box10 = $('#div10');
     var box9 = $('#div9');
+
+    //initialize localStorage.getItem
+    box1.val(localStorage.getItem('Entry1'));
+    box2.val(localStorage.getItem('Entry2'));
+    box3.val(localStorage.getItem('Entry3'));
+    box4.val(localStorage.getItem('Entry4'));
+    box5.val(localStorage.getItem('Entry5'));
+    box9.val(localStorage.getItem('Entry9'));
+    box10.val(localStorage.getItem('Entry10'));
+    box11.val(localStorage.getItem('Entry11'));
+    box12.val(localStorage.getItem('Entry12'));
 
     // buttons
     var button9 = $('#btn9');
@@ -27,6 +40,8 @@ $(document).ready(function() {
 
 
     var timeNow = moment().format('HH');
+
+
 
     function tick() {
 
@@ -203,79 +218,80 @@ $(document).ready(function() {
 
 
     //onClick events for all save buttons
+    // function loadThis() {
+
+
+
+    // }
 
     button9.on('click', function() {
+        event.preventDefault();
+        if (box9.val() !== '') {
+            localStorage.setItem('Entry9', box9.val());
+        }
 
-        localStorage.setItem('Entry9', box9.val());
-        var entry = localStorage.getItem('Entry9');
-        box9.val(entry);
+
     });
     button10.on('click', function() {
+        if (box10.val() !== '') {
+            localStorage.setItem('Entry10', box10.val());
 
-        localStorage.setItem('Entry10', box10.val());
-        var entry = localStorage.getItem('Entry10');
-        box10.val(entry);
+        }
+
     });
-    button11.on('click', function() {
 
-        localStorage.setItem('Entry11', box11.val());
-        var entry = localStorage.getItem('Entry11');
-        box11.val(entry);
-    });
-    button11.on('click', function() {
 
-        localStorage.setItem('Entry11', box11.val());
-        var entry = localStorage.getItem('Entry11');
-        box11.val(entry);
+    button11.on('click', function() {
+        if (box11.val() !== '') {
+            localStorage.setItem('Entry11', box11.val());
+
+        }
+
     });
     button12.on('click', function() {
+        if (box12.val() !== '') {
+            localStorage.setItem('Entry12', box12.val());
 
-        localStorage.setItem('Entry12', box12.val());
-        var entry = localStorage.getItem('Entry12');
-        box12.val(entry);
+        }
     });
 
-
-
-
-
-
-
-
-
-
     button1.on('click', function() {
+        if (box1.val() !== '') {
+            localStorage.setItem('Entry1', box1.val());
 
-        localStorage.setItem('Entry1', box1.val());
-        var entry = localStorage.getItem('Entry1');
-        box1.val(entry);
+        }
+
     });
 
     button2.on('click', function() {
+        if (box2.val() !== '') {
+            localStorage.setItem('Entry2', box2.val());
 
-        localStorage.setItem('Entry2', box2.val());
-        var entry = localStorage.getItem('Entry2');
-        box2.val(entry);
+        }
+
     });
 
     button3.on('click', function() {
+        if (box3.val() !== '') {
+            localStorage.setItem('Entry3', box3.val());
 
-        localStorage.setItem('Entry3', box3.val());
-        var entry = localStorage.getItem('Entry3');
-        box3.val(entry);
+        }
+
     });
 
     button4.on('click', function() {
+        if (box4.val() !== '') {
+            localStorage.setItem('Entry4', box4.val());
 
-        localStorage.setItem('Entry4', box4.val());
-        var entry = localStorage.getItem('Entry4');
-        box4.val(entry);
+        }
+
     });
     button5.on('click', function() {
+        if (box5.val() !== '') {
+            localStorage.setItem('Entry5', box45val());
 
-        localStorage.setItem('Entry5', box45val());
-        var entry = localStorage.getItem('Entry5');
-        box5.val(entry);
+        }
+
     });
 
 
