@@ -37,11 +37,26 @@ $(document).ready(function() {
     var button3 = $('#btn3');
     var button4 = $('#btn4');
     var button5 = $('#btn5');
+    var clearBtn = $('#clearBtn');
 
 
     var timeNow = moment().format('HH');
 
+    function clear() {
+        localStorage.clear();
 
+        box1.val('');
+        box2.val('');
+        box3.val('');
+        box4.val('');
+        box5.val('');
+        box9.val('');
+        box10.val('');
+        box11.val('');
+        box12.val('');
+
+
+    }
 
     function tick() {
 
@@ -217,12 +232,9 @@ $(document).ready(function() {
     setInterval(checkTime, 600000);
 
 
-    //onClick events for all save buttons
-    // function loadThis() {
 
 
-
-    // }
+    clearBtn.on('click', clear);
 
     button9.on('click', function() {
         event.preventDefault();
@@ -287,7 +299,7 @@ $(document).ready(function() {
 
     button4.on('click', function() {
         event.preventDefault();
-        alert('4');
+
         if (box4.val() !== '') {
             localStorage.setItem('Entry4', box4.val());
 
@@ -296,7 +308,7 @@ $(document).ready(function() {
     });
     button5.on('click', function() {
         event.preventDefault();
-        alert('5');
+
         if (box5.val() !== '') {
             localStorage.setItem('Entry5', box5.val());
 
