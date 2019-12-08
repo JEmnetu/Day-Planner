@@ -233,6 +233,7 @@ $(document).ready(function() {
 
     });
     button10.on('click', function() {
+        event.preventDefault();
         if (box10.val() !== '') {
             localStorage.setItem('Entry10', box10.val());
 
@@ -242,6 +243,7 @@ $(document).ready(function() {
 
 
     button11.on('click', function() {
+        event.preventDefault();
         if (box11.val() !== '') {
             localStorage.setItem('Entry11', box11.val());
 
@@ -249,6 +251,7 @@ $(document).ready(function() {
 
     });
     button12.on('click', function() {
+        event.preventDefault();
         if (box12.val() !== '') {
             localStorage.setItem('Entry12', box12.val());
 
@@ -256,6 +259,7 @@ $(document).ready(function() {
     });
 
     button1.on('click', function() {
+        event.preventDefault();
         if (box1.val() !== '') {
             localStorage.setItem('Entry1', box1.val());
 
@@ -264,6 +268,7 @@ $(document).ready(function() {
     });
 
     button2.on('click', function() {
+        event.preventDefault();
         if (box2.val() !== '') {
             localStorage.setItem('Entry2', box2.val());
 
@@ -272,6 +277,7 @@ $(document).ready(function() {
     });
 
     button3.on('click', function() {
+        event.preventDefault();
         if (box3.val() !== '') {
             localStorage.setItem('Entry3', box3.val());
 
@@ -280,6 +286,8 @@ $(document).ready(function() {
     });
 
     button4.on('click', function() {
+        event.preventDefault();
+        alert('4');
         if (box4.val() !== '') {
             localStorage.setItem('Entry4', box4.val());
 
@@ -287,8 +295,10 @@ $(document).ready(function() {
 
     });
     button5.on('click', function() {
+        event.preventDefault();
+        alert('5');
         if (box5.val() !== '') {
-            localStorage.setItem('Entry5', box45val());
+            localStorage.setItem('Entry5', box5.val());
 
         }
 
